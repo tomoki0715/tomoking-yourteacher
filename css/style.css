@@ -202,7 +202,10 @@ header h1 {
 }
 
 /*トップページのロゴ画像*/
-.home #logo {
+/* .home */
+
+
+#logo {
 	width: 300px;	/*ロゴ画像の幅*/
 	position: absolute;z-index: 1;
 	left: 50%;
