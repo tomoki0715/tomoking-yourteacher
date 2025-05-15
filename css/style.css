@@ -205,7 +205,7 @@ header h1 {
 .home #logo {
 	width: 80px;	/*ロゴ画像の幅*/
 	position: absolute;z-index: 1;
-	left: 80%;
+	left: 50%;
 	top: 0px;
 	transform: translateX(-50%);
 }
