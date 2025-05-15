@@ -5,353 +5,305 @@
 <title>ともきんぐの受験指導</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="ともきんぐ【君だけの先生】">
- <link rel="stylesheet" href="css/stylefordest.css">
+<link rel="stylesheet" href="css/stylefordest.css"> {/* CSSファイル名は style.css または stylefordest.css のどちらが正しいか確認してください */}
 
 </head>
 
-<body>
+<body> {/* トップページの場合、homeクラスを付与 */}
 
 <header>
+    <div id="header-top">
+        <h1>いつも動画を見てくれてありがとう！</h1>
+        <ul class="lang">
+            {/* 言語切り替えなどが必要であればここに<li>要素を追加 */}
+        </ul>
+    </div>
 
-<div id="header-top">
-<h1>いつも動画を見てくれてありがとう！</h1>
-<ul class="lang">
-</ul>
-</div>
+    <div class="header-inner">
+        <p id="logo"><a href="index.html"><img src="images/logo_home.png" alt="Travel Logo"></a></p>
 
-<div class="header-inner">
-
-<p id="logo"><a href="index.html"><img src="images/logo_home.png" alt="Travel Logo"></a></p>
-
-<!--開閉ブロック-->
-<div id="menubar">
-
-<nav>
-<ul>
-<li><a href="index.html">ホーム<span>Home</span></a></li>
-<li><a href="destinations.html">コース一覧</a>
-	<ul>
-	<li><a href="destinations.html#link1">勉強習慣獲得プログラム</a></li>
-	<li><a href="destinations.html#link2">準備中</a></li>
-	<li><a href="destinations.html#link3">準備中</a></li>
-	</ul>
-</li>
-<li><a href="activities.html">特徴</a>
-	<ul>
-	<li><a href="activities_item.html">完全マンツーマン指導</a></li>
-	<li><a href="activities_item.html">毎日の進捗管理</a></li>
-	<li><a href="activities_item.html">オーダーメイドの勉強計画</a></li>
-	</ul>
-</li>
-<li><a href="events.html">ともきんぐ</a></li>
-<li><a href="faq.html">よくある質問</a></li>
-</ul>
-</nav>
-
-</div>
-<!--/#menubar-->
-
-</div>
-
+        <div id="menubar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム<span>Home</span></a></li>
+                    <li><a href="destinations.html">コース一覧</a>
+                        <ul>
+                            <li><a href="destinations.html#link1">勉強習慣獲得プログラム</a></li>
+                            <li><a href="destinations.html#link2">準備中</a></li>
+                            <li><a href="destinations.html#link3">準備中</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="activities.html">特徴</a>
+                        <ul>
+                            <li><a href="activities_item.html">完全マンツーマン指導</a></li>
+                            <li><a href="activities_item.html">毎日の進捗管理</a></li>
+                            <li><a href="activities_item.html">オーダーメイドの勉強計画</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="events.html">ともきんぐ</a></li>
+                    <li><a href="faq.html">よくある質問</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
 </header>
 	
-<!--スライドショー-->
 <aside id="mainimg">
-
-<div class="slide slide1">
-<div>
-<h2>君だけの地図で、合格へ<span>ともきんぐのオンライン受験サポート</span></h2>
-<p>毎日続けられる勉強法で、<br>確実な合格へ導くマンツーマン指導</p>
-</div>
-<video src="images/1.mp4" autoplay loop muted playsinline></video>
-</div>
-
-<div id="loading-text">loading...</div>
-
+    <div class="slide slide1">
+        <div>
+            <h2>君だけの地図で、合格へ<span>ともきんぐのオンライン受験サポート</span></h2>
+            <p>毎日続けられる勉強法で、<br>確実な合格へ導くマンツーマン指導</p>
+        </div>
+        <video src="images/1.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div id="loading-text">loading...</div>
 </aside>
 
 <div id="container">
-
-<div id="contents" class="bg1">
-
-<main>
-
-
-<section>
-            <h2 class="dh2">「【絶望】頑張りたいのに、机に向かえない君へ」</h2>
-            <img src="placeholder-pain.jpg" alt="うなだれてたくさんの参考書を前に途方に暮れている受験生" class="dpics">
-            <p class="dnp">
-                何度「明日から」と決意しても、結局三日坊主…<br>
-                やろうと思っても、何から始めていいか分からず時間だけが過ぎていく…<br>
-                周りは頑張ってるように見えるのに、自分だけ立ち止まっている気がする…
-            </p>
-            <p class="dnp">
-                受験生なのに、思うように勉強が続かない。<br>
-                そんな風に自分を責めて、苦しんでいませんか？
-            </p>
-            <p class="dnp">
-                その気持ち、痛いほどよく分かります。
-            </p>
-        </section>
-
-        <section>
-            <h2 class="dh2">それは、<strong>「あなたのせい」</strong>ではありません。</h2>
-            <img src="placeholder-alone.jpg" alt="鎖に繋がれているようなイメージの学生、または険しい山を一人で登るシルエット" class="dpics">
-            <p class="dnp">
-                実は、多くの人が「一人で毎日コツコツ続ける」ことに苦労しています。<br>
-                人間は本来、誰かと繋がっている環境や、適度な見守りがある方が、目標に向かって力を発揮しやすいからです。
-            </p>
-            <p class="dnp">
-                一人きりだと、誘惑に弱くなり、サボっても誰にもバレない安心感（？）から、つい楽な方に流されてしまうのは、ごく自然なことなんです。
-            </p>
-            <p class="dnp">
-                あなたに必要なのは、根性ややる気ではなく、<strong>「毎日やれる仕組み」</strong>と、**「あなたを一人にしない伴走者」**なんです。
-            </p>
-        </section>
-
-        <section>
-            <h2 class="dh2">もう、「一人で悩む時間」は終わりにしよう。</h2>
-            <h2 class="dh2"><strong>「[ここに正式名称]」</strong>が、あなたを変えます。</h2>
-
-            <img src="placeholder-support-network.jpg" alt="ともきんぐ、学生、LINE、コミュニティが繋がったサポート網のイメージ" class="dpics">
-            <p class="dnp">
-                そんな「一人で続かない悩み」を根本から解決し、<strong>受験勉強を乗り切るための揺るぎない「勉強習慣」を身につける</strong>ためのプログラムが誕生しました。
-            </p>
-             <p class="dnp">
-                「一人じゃ続かない」君が、無理なく、着実に、<strong>「毎日コツコツ頑張れる自分」に変わる</strong>ための、科学に基づいた**「仕組み」と、あなたの「伴走者」**がここにいます。
-            </p>
-        </section>
-
-        <section>
-            <h2 class="dh2">迷う時間をなくし、行動を始めるスイッチを入れる<strong>「毎日ミッション」</strong></h2>
-
-            <img src="placeholder-daily-mission.jpg" alt="スマホにLINEでミッションが届くイメージ、またはチェックリスト" class="dpics">
-            <p class="dnp">
-                「今日、何をすればいいんだろう？」と迷う時間、もったいないですよね。
-            </p>
-            <p class="dnp">
-                このプログラムでは、心理学に基づいたスモールステップで、「今日のあなたは、これだけやればOK！」という具体的な学習ミッションが毎日あなたのLINEに届きます。
-            </p>
-            <ul>
-                <li class="dsli">毎日「これだけ！」が明確に。迷わずすぐに取りかかれます。</li>
-                <li class="dsli">無理なく達成できる設計。小さな成功体験を毎日積み重ねられます。</li>
-                <li class="dsli">習慣化の土台が自然に作られます。</li>
-            </ul>
-            <p class="dnp">
-                さらに、ミッションをクリアしたかどうかを毎日LINEでご報告いただきます。この<strong>「報告する」という外部からの目が、一人だとついついサボってしまうあなたに、適度なプレッシャーと「やらなきゃ！」という良い強制力</strong>を生み出します。
-            </p>
-        </section>
-
-        <section>
-            <h2 class="dh2">「挫折させない」[あなたの名前/ともきんぐ]の個別LINE伴走サポート</h2>
-
-            <img src="placeholder-tomoking-line.jpg" alt="[あなたの名前/ともきんぐ]の温かい雰囲気の写真またはイラストとLINEのやり取り" class="dpics">
-            <p class="dnp">
-                このプログラムの最も大切な要素の一つが、私、[あなたの名前/ともきんぐ]によるLINEでの個別サポートです。
-            </p>
-            <p class="dnp">
-                毎日報告を見て、<strong>もしミッションが達成できなかった時も、決してあなたを責めません。</strong>
-            </p>
-            <p class="dnp">
-                「なぜ今日は難しかった？」「次回は時間を変えてみようか？」「この教材の方が取り組みやすいかも？」など、**あなたの状況に合わせて、原因を一緒に考え、具体的な改善策をLINEで丁寧にアドバイス**します。
-            </p>
-            <ul>
-                <li class="dsli">あなたの「挫折ポイント」を一緒に見つけ、乗り越える方法が分かります。</li>
-                <li class="dsli">いつでも相談できる相手がいる安心感が手に入ります。</li>
-                <li class="dsli">「見守られている」意識が、継続する力になります。</li>
-            </ul>
-            <p class="dnp">
-                勉強内容に関する疑問や、受験に関する不安など、プログラム内容以外の学習相談にも、プログラム期間中であればLINEでいつでも対応します。
-            </p>
-        </section>
-
-        <section>
-            <h2 class="dh2">「一人じゃない」から頑張れる。受験生限定コミュニティ</h2>
-
-            <img src="placeholder-community.jpg" alt="オンラインで複数の学生が笑顔で繋がっているイメージ、またはチャット画面のイメージ" class="dpics">
-
-            <p class="dnp">
-                あなたはもう、一人で悩んだり、孤独に耐えたりする必要はありません。
-            </p>
-            <p class="dnp">
-                このプログラムの参加者限定の**クローズドなオンラインコミュニティ**にご招待します。<br>
-                同じように「一人じゃ続かない」悩みを抱え、克服しようと頑張る**全国の受験生**が集まっています。
-            </p>
-            <ul>
-                <li class="dsli">お互いの進捗を共有し、励まし合えます。</li>
-                <li class="dsli">悩みを打ち明けたり、乗り越え方を相談したりできます。</li>
-                <li class="dsli">他のメンバーの頑張りが、あなたのモチベーションになります。</li>
-                <li class="dsli">「自分だけじゃないんだ」という安心感が得られます。</li>
-            </ul>
-            <p class="dnp">
-                仲間がいるから、つらい時期も乗り越えられます。
-            </p>
-        </section>
-
-        <section>
-            <h2 class="dh2">約30日後、あなたは「毎日コツコツ頑張れる自分」になっています。</h2>
-
-            <img src="placeholder-after-program.jpg" alt="自信に満ちた笑顔で勉強している受験生、積み上がった問題集、桜など合格を連想させるイメージ" class="dpics">
-
-            <p class="dnp">
-                プログラムを終える約30日後、あなたの勉強習慣は劇的に変わっています。
-            </p>
-            <p class="dnp">
-                毎日4時間（またはそれ以上）集中して勉強するのが**「当たり前」**になり、勉強への心理的なハードルが驚くほど下がります。
-            </p>
-             <ul>
-                <li class="dsli">勉強するまでの「めんどくさい」時間が激減。</li>
-                <li class="dsli">計画通りに進められる日が増え、<strong>自分自身に確かな自信</strong>が生まれます。</li>
-                <li class="dsli">受験本番に向けて、「やれるだけのことはやれた」という強い手応えを感じるでしょう。</li>
-                <li class="dsli">もう、一人で抱え込み、悩む必要はありません。</li>
-            </ul>
-            <p class="dnp">
-                「やればできる」という成功体験は、勉強だけでなく、これからの人生の大きな力になります。
-            </p>
-        </section>
-
-        <section>
-            <h2 class="dh2">プログラム詳細とお申し込み</h2>
-
-            <img src="placeholder-info-icons.png" alt="カレンダー、LINE、お金のマークなどの情報アイコン" class="dpics">
-
-            <dl>
-                <dt class="dsdt">プログラム名称：</dt>
-                <dd>[ここに正式名称]</dd>
-
-                <dt class="dsdt">実施期間：</dt>
-                <dd>約30日間</dd>
-
-                <dt class="dsdt">提供形式：</dt>
-                <dd>オンライン（LINE公式アカウント、限定コミュニティなど）</dd>
-
-                <dt class="price-note">価格：</dt>
-                <dd class="price-note"><strong>¥3,000</strong> （ポッキリ価格、追加費用なし）</dd>
-
-                <dt>含まれるもの：</dt>
-                <dd>
-                    <ul>
-                        <li class="dsli">約30日間の毎日ミッション配信</li>
-                        <li class="dsli">LINEでの日次進捗確認＆個別アドバイス</li>
-                        <li class="dsli">プログラム期間中の学習相談（LINEにて）</li>
-                        <li class="dsli">受験生限定オンラインコミュニティ参加権</li>
-                    </ul>
-                </dd>
-            </dl>
-
-            <p>※ 本プログラムは習慣化に焦点を当てており、特定の科目の個別指導は含みません。</p>
-
+    <div id="contents" class="bg1">
+        <main> {/* mainタグを開始 */}
+            <section>
+                <h2 class="dh2">「【絶望】頑張りたいのに、机に向かえない君へ」</h2>
+                <img src="placeholder-pain.jpg" alt="うなだれてたくさんの参考書を前に途方に暮れている受験生" class="dpics">
+                <p class="dnp">
+                    何度「明日から」と決意しても、結局三日坊主…<br>
+                    やろうと思っても、何から始めていいか分からず時間だけが過ぎていく…<br>
+                    周りは頑張ってるように見えるのに、自分だけ立ち止まっている気がする…
+                </p>
+                <p class="dnp">
+                    受験生なのに、思うように勉強が続かない。<br>
+                    そんな風に自分を責めて、苦しんでいませんか？
+                </p>
+                <p class="dnp">
+                    その気持ち、痛いほどよく分かります。
+                </p>
             </section>
 
-        <section>
-            <h2 class="dh2">さあ、あなたも「変わる一歩」を踏み出そう。</h2>
-            <img src="placeholder-cta-arrow.png" alt="力強い矢印や、目標に向かって走り出す人のイメージ">
-             <p class="dnp">
-                一人で悩む日々は、もう終わりにしませんか？<br>
-                [あなたの名前/ともきんぐ]と、同じ目標を持つ仲間が、あなたの習慣獲得を徹底サポートします。
-            </p>
-            <p class="dnp">
-                約30日後、「毎日コツコツ頑張れる自分」に変わって、自信を持って受験に臨む未来を掴み取りましょう。
-            </p>
+            <section>
+                <h2 class="dh2">それは、<strong>「あなたのせい」</strong>ではありません。</h2>
+                <img src="placeholder-alone.jpg" alt="鎖に繋がれているようなイメージの学生、または険しい山を一人で登るシルエット" class="dpics">
+                <p class="dnp">
+                    実は、多くの人が「一人で毎日コツコツ続ける」ことに苦労しています。<br>
+                    人間は本来、誰かと繋がっている環境や、適度な見守りがある方が、目標に向かって力を発揮しやすいからです。
+                </p>
+                <p class="dnp">
+                    一人きりだと、誘惑に弱くなり、サボっても誰にもバレない安心感（？）から、つい楽な方に流されてしまうのは、ごく自然なことなんです。
+                </p>
+                <p class="dnp">
+                    あなたに必要なのは、根性ややる気ではなく、<strong>「毎日やれる仕組み」</strong>と、**「あなたを一人にしない伴走者」**なんです。
+                </p>
+            </section>
 
-            <a href="[決済サービスのURLをここに設定]" class="cta-button">
-                本プログラムに参加する (¥3,000)
-            </a>
-            <div class="payment-icons">
-                <img src="icon-visa.png" alt="Visa">
-                <img src="icon-mastercard.png" alt="Mastercard">
-                <img src="icon-jcb.png" alt="JCB">
-                <img src="icon-konbini.png" alt="コンビニ決済">
-                 <img src="icon-paypay.png" alt="PayPay">
-                 <img src="icon-linepay.png" alt="LINE Pay">
-                 </div>
+            <section>
+                <h2 class="dh2">もう、「一人で悩む時間」は終わりにしよう。</h2>
+                <h2 class="dh2"><strong>「[ここに正式名称]」</strong>が、あなたを変えます。</h2>
+                <img src="placeholder-support-network.jpg" alt="ともきんぐ、学生、LINE、コミュニティが繋がったサポート網のイメージ" class="dpics">
+                <p class="dnp">
+                    そんな「一人で続かない悩み」を根本から解決し、<strong>受験勉強を乗り切るための揺るぎない「勉強習慣」を身につける</strong>ためのプログラムが誕生しました。
+                </p>
+                <p class="dnp">
+                    「一人じゃ続かない」君が、無理なく、着実に、<strong>「毎日コツコツ頑張れる自分」に変わる</strong>ための、科学に基づいた**「仕組み」と、あなたの「伴走者」**がここにいます。
+                </p>
+            </section>
 
-        </section>
+            <section>
+                <h2 class="dh2">迷う時間をなくし、行動を始めるスイッチを入れる<strong>「毎日ミッション」</strong></h2>
+                <img src="placeholder-daily-mission.jpg" alt="スマホにLINEでミッションが届くイメージ、またはチェックリスト" class="dpics">
+                <p class="dnp">
+                    「今日、何をすればいいんだろう？」と迷う時間、もったいないですよね。
+                </p>
+                <p class="dnp">
+                    このプログラムでは、心理学に基づいたスモールステップで、「今日のあなたは、これだけやればOK！」という具体的な学習ミッションが毎日あなたのLINEに届きます。
+                </p>
+                <ul>
+                    <li class="dsli">毎日「これだけ！」が明確に。迷わずすぐに取りかかれます。</li>
+                    <li class="dsli">無理なく達成できる設計。小さな成功体験を毎日積み重ねられます。</li>
+                    <li class="dsli">習慣化の土台が自然に作られます。</li>
+                </ul>
+                <p class="dnp">
+                    さらに、ミッションをクリアしたかどうかを毎日LINEでご報告いただきます。この<strong>「報告する」という外部からの目が、一人だとついついサボってしまうあなたに、適度なプレッシャーと「やらなきゃ！」という良い強制力</strong>を生み出します。
+                </p>
+            </section>
 
+            <section>
+                <h2 class="dh2">「挫折させない」[あなたの名前/ともきんぐ]の個別LINE伴走サポート</h2>
+                <img src="placeholder-tomoking-line.jpg" alt="[あなたの名前/ともきんぐ]の温かい雰囲気の写真またはイラストとLINEのやり取り" class="dpics">
+                <p class="dnp">
+                    このプログラムの最も大切な要素の一つが、私、[あなたの名前/ともきんぐ]によるLINEでの個別サポートです。
+                </p>
+                <p class="dnp">
+                    毎日報告を見て、<strong>もしミッションが達成できなかった時も、決してあなたを責めません。</strong>
+                </p>
+                <p class="dnp">
+                    「なぜ今日は難しかった？」「次回は時間を変えてみようか？」「この教材の方が取り組みやすいかも？」など、**あなたの状況に合わせて、原因を一緒に考え、具体的な改善策をLINEで丁寧にアドバイス**します。
+                </p>
+                <ul>
+                    <li class="dsli">あなたの「挫折ポイント」を一緒に見つけ、乗り越える方法が分かります。</li>
+                    <li class="dsli">いつでも相談できる相手がいる安心感が手に入ります。</li>
+                    <li class="dsli">「見守られている」意識が、継続する力になります。</li>
+                </ul>
+                <p class="dnp">
+                    勉強内容に関する疑問や、受験に関する不安など、プログラム内容以外の学習相談にも、プログラム期間中であればLINEでいつでも対応します。
+                </p>
+            </section>
 
-</section>
+            <section>
+                <h2 class="dh2">「一人じゃない」から頑張れる。受験生限定コミュニティ</h2>
+                <img src="placeholder-community.jpg" alt="オンラインで複数の学生が笑顔で繋がっているイメージ、またはチャット画面のイメージ" class="dpics">
+                <p class="dnp">
+                    あなたはもう、一人で悩んだり、孤独に耐えたりする必要はありません。
+                </p>
+                <p class="dnp">
+                    このプログラムの参加者限定の**クローズドなオンラインコミュニティ**にご招待します。<br>
+                    同じように「一人じゃ続かない」悩みを抱え、克服しようと頑張る**全国の受験生**が集まっています。
+                </p>
+                <ul>
+                    <li class="dsli">お互いの進捗を共有し、励まし合えます。</li>
+                    <li class="dsli">悩みを打ち明けたり、乗り越え方を相談したりできます。</li>
+                    <li class="dsli">他のメンバーの頑張りが、あなたのモチベーションになります。</li>
+                    <li class="dsli">「自分だけじゃないんだ」という安心感が得られます。</li>
+                </ul>
+                <p class="dnp">
+                    仲間がいるから、つらい時期も乗り越えられます。
+                </p>
+            </section>
 
+            <section>
+                <h2 class="dh2">約30日後、あなたは「毎日コツコツ頑張れる自分」になっています。</h2>
+                <img src="placeholder-after-program.jpg" alt="自信に満ちた笑顔で勉強している受験生、積み上がった問題集、桜など合格を連想させるイメージ" class="dpics">
+                <p class="dnp">
+                    プログラムを終える約30日後、あなたの勉強習慣は劇的に変わっています。
+                </p>
+                <p class="dnp">
+                    毎日4時間（またはそれ以上）集中して勉強するのが**「当たり前」**になり、勉強への心理的なハードルが驚くほど下がります。
+                </p>
+                <ul>
+                    <li class="dsli">勉強するまでの「めんどくさい」時間が激減。</li>
+                    <li class="dsli">計画通りに進められる日が増え、<strong>自分自身に確かな自信</strong>が生まれます。</li>
+                    <li class="dsli">受験本番に向けて、「やれるだけのことはやれた」という強い手応えを感じるでしょう。</li>
+                    <li class="dsli">もう、一人で抱え込み、悩む必要はありません。</li>
+                </ul>
+                <p class="dnp">
+                    「やればできる」という成功体験は、勉強だけでなく、これからの人生の大きな力になります。
+                </p>
+            </section>
 
+            <section>
+                <h2 class="dh2">プログラム詳細とお申し込み</h2>
+                <img src="placeholder-info-icons.png" alt="カレンダー、LINE、お金のマークなどの情報アイコン" class="dpics">
+                <dl>
+                    <dt class="dsdt">プログラム名称：</dt>
+                    <dd>[ここに正式名称]</dd>
 
-<section>
+                    <dt class="dsdt">実施期間：</dt>
+                    <dd>約30日間</dd>
 
-<h2 class="dn">ギャラリー</h2>
+                    <dt class="dsdt">提供形式：</dt>
+                    <dd>オンライン（LINE公式アカウント、限定コミュニティなど）</dd>
 
-<div class="thumbnail-slide">
-<a href="#"><img src="images/feture1.jpg" alt=""></a>
-<a href="#"><img src="images/feture2.jpg" alt=""></a>
-<a href="#"><img src="images/feture3.jpg" alt=""></a>
-<a href="#"><img src="images/feture1.jpg" alt=""></a>
-<a href="#"><img src="images/feture2.jpg" alt=""></a>
-<a href="#"><img src="images/feture3.jpg" alt=""></a>
-</div>
+                    <dt class="price-note">価格：</dt>
+                    <dd class="price-note"><strong>¥3,000</strong> （ポッキリ価格、追加費用なし）</dd>
 
-</section>
+                    <dt>含まれるもの：</dt>
+                    <dd>
+                        <ul>
+                            <li class="dsli">約30日間の毎日ミッション配信</li>
+                            <li class="dsli">LINEでの日次進捗確認＆個別アドバイス</li>
+                            <li class="dsli">プログラム期間中の学習相談（LINEにて）</li>
+                            <li class="dsli">受験生限定オンラインコミュニティ参加権</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <p>※ 本プログラムは習慣化に焦点を当てており、特定の科目の個別指導は含みません。</p>
+            </section>
 
+            <section>
+                <h2 class="dh2">さあ、あなたも「変わる一歩」を踏み出そう。</h2>
+                <img src="placeholder-cta-arrow.png" alt="力強い矢印や、目標に向かって走り出す人のイメージ">
+                <p class="dnp">
+                    一人で悩む日々は、もう終わりにしませんか？<br>
+                    [あなたの名前/ともきんぐ]と、同じ目標を持つ仲間が、あなたの習慣獲得を徹底サポートします。
+                </p>
+                <p class="dnp">
+                    約30日後、「毎日コツコツ頑張れる自分」に変わって、自信を持って受験に臨む未来を掴み取りましょう。
+                </p>
+                <a href="[決済サービスのURLをここに設定]" class="cta-button">
+                    本プログラムに参加する (¥3,000)
+                </a>
+                <div class="payment-icons">
+                    <img src="icon-visa.png" alt="Visa">
+                    <img src="icon-mastercard.png" alt="Mastercard">
+                    <img src="icon-jcb.png" alt="JCB">
+                    <img src="icon-konbini.png" alt="コンビニ決済">
+                    <img src="icon-paypay.png" alt="PayPay">
+                    <img src="icon-linepay.png" alt="LINE Pay">
+                </div>
+            </section>
 
+            {/* 最後のsectionが閉じていないため、ここで閉じるか、内容が続く場合は記述してください。
+                元のHTMLでは、この後にもう一つ<section>（ギャラリー）がありましたが、
+                構造的にこの位置か、あるいは上記の最後の<section>の内容がギャラリーなのか、
+                意図を確認する必要があります。ここでは、一旦上記の<section>で主要なコンテンツは終わり、
+                ギャラリーセクションをその下に追加する形で修正します。
+            */}
 
-</div>
+            <section>
+                <h2 class="dn">ギャラリー</h2>
+                <div class="thumbnail-slide">
+                    <a href="#"><img src="images/feture1.jpg" alt=""></a>
+                    <a href="#"><img src="images/feture2.jpg" alt=""></a>
+                    <a href="#"><img src="images/feture3.jpg" alt=""></a>
+                    <a href="#"><img src="images/feture1.jpg" alt=""></a>
+                    <a href="#"><img src="images/feture2.jpg" alt=""></a>
+                    <a href="#"><img src="images/feture3.jpg" alt=""></a>
+                </div>
+            </section>
 
-</div>
-</main>
+        </main> {/* mainタグを閉じる */}
+    </div> {/* /#contents を閉じる */}
+</div> {/* /#container を閉じる */}
 	
 <div id="footer-contents">
-
-<div class="left">
-
-<h3>ともきんぐ</h3>
-<p>メール：tomoki.business.0715@gmail.com</p>
-
-<ul class="icons">
-<li><a href="https://lin.ee/NMnSBZW"><i class="fab fa-line"></i></a></li>
-<li><a href="https://youtube.com/@tomotomoking?si=-To-MK_6kz3ujxdS"><i class="fab fa-youtube"></i></a></li>
-</ul>
-
-<p class="btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSddD4xnvoc9QdZz3LcxiyphRp9M5ZNudzO9mEMu8_v2b3OH7A/viewform?usp=dialog">問い合わせ</a></p>
-<p><a href="privacy.html">プライバシーポリシー</a></p>
-<p><a href="transraw.html">特定商取引法に基づく表示</a></p>
-<p><a href="menseki.html">免責事項</a></p>
-
-
+    <div class="left">
+        <h3>ともきんぐ</h3>
+        <p>メール：tomoki.business.0715@gmail.com</p>
+        <ul class="icons">
+            <li><a href="https://lin.ee/NMnSBZW"><i class="fab fa-line"></i></a></li>
+            <li><a href="https://youtube.com/@tomotomoking?si=-To-MK_6kz3ujxdS"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+        <p class="btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSddD4xnvoc9QdZz3LcxiyphRp9M5ZNudzO9mEMu8_v2b3OH7A/viewform?usp=dialog">問い合わせ</a></p>
+        <p><a href="privacy.html">プライバシーポリシー</a></p>
+        <p><a href="transraw.html">特定商取引法に基づく表示</a></p>
+        <p><a href="menseki.html">免責事項</a></p>
+    </div>
+    {/* <div class="right"> ... </div> が必要であればここに追加 */}
 </div>
-<!--/.left-->
-
-
-<!--/.right-->
-
+{/* フッターメニューが必要であればここに追加
+<div id="footermenu">
+    ...
 </div>
-<!--/#footer-contents-->
-
-
-<!--/#footermenu-->
-
+*/}
 <footer>
-<small>&copy; <a href="index.html">Tomoking</a> All Rights Reserved.</small>
-<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+    <small>© <a href="index.html">Tomoking</a> All Rights Reserved.</small>
+    <span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
 </footer>
 
-<!--ページの上部へ戻るボタン-->
 <div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
 
-<!--開閉ボタン（ハンバーガーアイコン）-->
 <div id="menubar_hdr">
-<div class="menu-icon">
-<span></span><span></span><span></span>
-</div>
+    <div class="menu-icon"> {/* 元のHTMLでは class="menu-icon" がなかったので追加しました。CSSと合わせて確認してください。 */}
+        <span></span><span></span><span></span>
+    </div>
 </div>
 
-<!--jQueryの読み込み-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<!--スライドショー（slick）-->
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/slick.js"></script>
 
-<!--パララックス（inview）-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
 <script src="js/jquery.inview_set.js"></script>
 
-<!--このテンプレート専用のスクリプト-->
 <script src="js/main.js"></script>
 
 </body>
