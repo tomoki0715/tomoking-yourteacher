@@ -210,28 +210,16 @@ header h1 {
 	transform: translateX(-50%);
 }
 
-	*画面幅900px以下の追加指定*/
-@media screen and (max-width:900px) {
-
+	/*画面幅900px以下の追加指定*/
+	@media screen and (max-width:900px) {
+	
 	/*ロゴサイズの上書き*/
 	.home #logo {
 		min-width: 80px;	/*最小幅を設定しておきます。これ以上は小さくなりません。*/
 		width: 10vw;		/*幅。画面幅100%＝100vwです。*/
-
-		/* ここから修正・追加 */
-		position: static; /* ★絶対配置を解除する */
-		left: auto;       /* ★left指定を解除する */
-		top: auto;        /* ★top指定を解除する */
-        transform: none;  /* ★transformも解除する。中央寄せはmargin: autoで行う */
-		z-index: auto;    /* z-indexも解除しておくのが安全 */
-
-		margin: 20px auto; /* ★上下に余白（例：20px）をつけつつ、左右をautoにして中央寄せ */
-                           /* 上下の余白は必要に応じて調整してください（例: 10px auto; など） */
 	}
-
-    /* 必要であれば、ヘッダーの高さなどもメディアクエリ内で調整してください */
-    /* header { height: 80px; } */
-
+	
+	}/*追加指定ここまで*/
 
 
 /*header-top（headerの最上部の帯ブロック）
