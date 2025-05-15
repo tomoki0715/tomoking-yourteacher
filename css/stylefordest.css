@@ -1489,3 +1489,218 @@ ul.icons {
 	.pc {display: block;}
 
 	}/*追加指定ここまで*/
+
+
+
+section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+}
+
+/* h2 - 各セクションのメインタイトル (変更なし) */
+.dh2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #0056b3;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+/* img - 各セクションの画像 (変更なし) */
+.dpics {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* p - 各セクションの本文段落 (変更なし) */
+.dnp {
+    font-size: 1em;
+    margin-bottom: 1em;
+    text-align: left;
+    /* strongタグはデフォルトの太字でOK */
+}
+
+/* ul - リストコンテナ (変更なし) */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* li - リストアイテム全体 (クラスがないliには基本的にスタイルが当たらないように) */
+/* ::beforeの位置決めにposition: relativeが必要なので、liに残すか.dsliに移動 */
+/* 今回は.dsliにclassを付けているliにスタイルを寄せたいので、positionも.dsliへ */
+li {
+    /* デフォルトのブラウザスタイル以外、基本スタイルはここに記述しない */
+     /* 例: margin-bottom: 0.8em; */ /* このスタイルは.dsliへ移動 */
+     /* 例: padding-left: 20px; */ /* このスタイルは.dsliへ移動 */
+     /* 例: position: relative; */ /* このスタイルは.dsliへ移動 */
+}
+
+
+/* li::before - チェックマーク【★修正箇所★】 */
+/* .dsli::before の行頭に { を追加 */
+.dsli::before { /* ここを修正 */
+    content: '✅';
+    position: absolute;
+    left: 0;
+    color: green;
+    font-size: 1.1em;
+    top: 0;
+}
+
+/* .dsli - リストアイテム（li）に割り振ったクラス【★スタイルを移動済み★】 */
+.dsli {
+     margin-bottom: 0.8em;
+     padding-left: 20px;
+     position: relative;
+     /* デフォルトのliスタイルを打ち消したい場合などはここに追加 */
+}
+
+/* li - リストアイテム全体 (クラスがないliにはスタイルが当たらないように)【★修正済み★】 */
+/* position: relative; は.dsliに移動したので、li全体には特別なスタイルは不要 */
+li {
+    /* デフォルトのブラウザスタイル以外、基本スタイルはここに記述しない */
+}
+
+
+/* dt - 定義リストの項目名全体 (クラスがないdtにはスタイルが当たらないように)【★修正箇所★】 */
+/* このセレクタ自体は、デフォルトのブラウザスタイル以外を打ち消す目的などで残しても良いが、 */
+/* 不要であればまるっと削除しても良い。ただし、{}は閉じること。 */
+/* 例：デフォルトの太字を強制的に解除したい場合など */
+/* dt { font-weight: normal; } */
+/* または、スタイル不要ならセレクタ定義ごと削除 */
+
+/* .dsdt - dtに割り振ったクラス【★スタイルを移動しました】 */
+/* 前回の修正内容から、不足していた閉じ } は不要な箇所だったので削除 */
+.dsdt {
+    font-weight: bold; /* 太字 */
+    margin-top: 1.5em; /* 上余白（項目間の区切り） */
+    margin-bottom: 0.5em; /* 下余白（定義との間） */
+    color: #555; /* 少し控えめな色 */
+     /* デフォルトのdtスタイルを打ち消したい場合などはここに追加 */
+}
+
+/* dd - 定義リストの項目の内容 (変更なし) */
+dd {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* .dsdt - dtに割り振ったクラス【★スタイルを移動しました】 */
+.dsdt {
+    font-weight: bold; /* 太字 */
+    margin-top: 1.5em; /* 上余白（項目間の区切り） */
+    margin-bottom: 0.5em; /* 下余白（定義との間） */
+    color: #555; /* 少し控えめな色 */
+     /* デフォルトのdtスタイルを打ち消したい場合などはここに追加 */
+}
+
+
+/* .price-note - 価格表示用のクラス (変更なし) */
+.price-note {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d9534f;
+    text-align: center;
+    margin: 30px auto;
+}
+
+/* .cta-button - CTAボタンのリンク（aタグ） (変更なし) */
+.cta-button {
+    display: block;
+    width: 80%;
+    max-width: 350px;
+    margin: 40px auto;
+    padding: 15px 25px;
+    text-align: center;
+    background-color: #ff7e00;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.cta-button:hover {
+    background-color: #ff9a3d;
+}
+
+/* .payment-icons - 決済方法アイコンのコンテナ (変更なし) */
+.payment-icons {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* .payment-icons 内の画像 (変更なし) */
+.payment-icons img {
+    height: 30px;
+    margin: 0 8px;
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+
+/* スマートフォン表示の調整例（メディアクエリ） (クラス指定箇所を修正) */
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .dh2 { /* h2 はクラス指定があるのでそのまま */
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .dpics { /* img はクラス指定があるのでそのまま */
+        margin: 20px auto;
+    }
+
+    .dnp { /* p はクラス指定があるのでそのまま */
+        font-size: 0.95em;
+        margin-bottom: 0.8em;
+    }
+
+    /* li に直接スタイルを当てていないので、ここも.dsliへ変更 */
+    .dsli {
+        margin-bottom: 0.6em; /* リスト間隔も少し詰める */
+    }
+
+     .cta-button { /* ボタンはクラス指定があるのでそのまま */
+        width: 90%;
+        font-size: 1.1em;
+        padding: 12px 15px;
+        margin: 30px auto;
+    }
+
+     .payment-icons img { /* 決済アイコン画像はクラス指定があるのでそのまま */
+        height: 25px;
+        margin: 0 5px;
+    }
+
+     /* dt に直接スタイルを当てていないので、ここも.dsdtへ変更 */
+     .dsdt {
+         margin-top: 1em; /* スマホでは間隔を詰める */
+     }
+
+      /* dd に直接スタイルは当てていないので修正なし */
+
+}
