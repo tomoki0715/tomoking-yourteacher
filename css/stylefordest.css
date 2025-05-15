@@ -627,183 +627,199 @@ ul.icons {
 
 
 section {
-    margin-bottom: 40px; /* セクション間の下余白 */
-    padding-bottom: 20px; /* セクション内の下パディング */
-    border-bottom: 1px solid #eee; /* セクションの下区切り線 */
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
 }
 
-/* 最後のセクションは区切り線をなくす */
 section:last-of-type {
     border-bottom: none;
-    margin-bottom: 20px; /* 最後のセクションは少し余白を減らす */
+    margin-bottom: 20px;
     padding-bottom: 0;
 }
 
-
-/* 各クラスへのスタイル */
-
-/* h2 - 各セクションのメインタイトル */
+/* h2 - 各セクションのメインタイトル (変更なし) */
 .dh2 {
-    font-size: 1.8em; /* 見出しの文字サイズ */
-    font-weight: bold; /* 太字に */
-    color: #0056b3; /* タイトルの色 */
-    text-align: center; /* 中央揃え */
-    margin-top: 30px; /* 上余白 */
-    margin-bottom: 25px; /* 下余白 */
-    line-height: 1.4; /* 見出しの行間 */
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #0056b3;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    line-height: 1.4;
 }
 
-/* img - 各セクションの画像 */
+/* img - 各セクションの画像 (変更なし) */
 .dpics {
-    max-width: 100%; /* 親要素（section）の幅に合わせる */
-    height: auto; /* 縦横比維持 */
-    display: block; /* ブロック要素化（中央寄せのため） */
-    margin: 25px auto; /* 上下左右に余白、中央配置 */
-    border-radius: 8px; /* 角を丸く */
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* 軽い影 */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-/* p - 各セクションの本文段落 */
+/* p - 各セクションの本文段落 (変更なし) */
 .dnp {
-    font-size: 1em; /* 本文の文字サイズ */
-    margin-bottom: 1em; /* 段落の下余白 */
-    text-align: left; /* 左揃え */
-    /* 強調したい部分のstrongタグはデフォルトの太字でOK */
+    font-size: 1em;
+    margin-bottom: 1em;
+    text-align: left;
+    /* strongタグはデフォルトの太字でOK */
 }
 
-/* ul li - リストアイテム全体（箇条書き） */
+/* ul - リストコンテナ (変更なし) */
 ul {
-    list-style: none; /* デフォルトのリストスタイルをなくす */
-    padding: 0; /* デフォルトの左パディングをなくす */
-    margin: 20px 0; /* リストブロック上下の余白 */
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
 }
 
-/* li - リストアイテム個別 */
+/* li - リストアイテム全体 (クラスがないliには基本的にスタイルが当たらないように) */
+/* ::beforeの位置決めにposition: relativeが必要なので、liに残すか.dsliに移動 */
+/* 今回は.dsliにclassを付けているliにスタイルを寄せたいので、positionも.dsliへ */
 li {
+    /* デフォルトのブラウザスタイル以外、基本スタイルはここに記述しない */
+     /* 例: margin-bottom: 0.8em; */ /* このスタイルは.dsliへ移動 */
+     /* 例: padding-left: 20px; */ /* このスタイルは.dsliへ移動 */
+     /* 例: position: relative; */ /* このスタイルは.dsliへ移動 */
+}
+
+
+/* li::before - チェックマーク (変更なし - li要素自体へのスタイルではないため影響なし) */
+li::before {
+    content: '✅';
+    position: absolute;
+    left: 0;
+    color: green;
+    font-size: 1.1em;
+    top: 0;
+}
+
+/* .dsli - リストアイテム（li）に割り振ったクラス【★スタイルを移動しました】 */
+.dsli {
      margin-bottom: 0.8em; /* 各リストアイテムの下余白 */
      padding-left: 20px; /* チェックマーク分の左余白 */
-     position: relative; /* ::beforeの位置基準 */
+     position: relative; /* ::beforeの位置基準 - liから移動 */
+     /* デフォルトのliスタイルを打ち消したい場合などはここに追加 */
 }
 
-/* li::before - チェックマーク */
-li::before {
-    content: '✅'; /* チェックマークの絵文字 */
-    position: absolute; /* liを基準に絶対位置 */
-    left: 0; /* liの左端に配置 */
-    color: green; /* チェックマークの色 */
-    font-size: 1.1em; /* チェックマークのサイズ */
-    top: 0; /* 上端に合わせる */
-}
 
-/* .dsli - リストアイテム（li）に割り振ったクラス */
-/* 上記のliセレクタで基本スタイルを定義したので、dsliでは追加の調整のみ */
-/* 例えば、特定のリストだけ余白を変えたい場合などに使う */
-/* 現状、liセレクタのスタイルがそのまま適用されるため、dsliに特別なスタイルは不要かもしれません */
-
-
-/* dt - 定義リストの項目名（例: プログラム名称：） */
+/* dt - 定義リストの項目名全体 (クラスがないdtには基本的にスタイルが当たらないように) */
 dt {
+    /* デフォルトのブラウザスタイル以外、基本スタイルはここに記述しない */
+     /* 例: font-weight: bold; */ /* このスタイルは.dsdtへ移動 */
+     /* 例: margin-top: 1.5em; */ /* このスタイルは.dsdtへ移動 */
+     /* 例: margin-bottom: 0.5em; */ /* このスタイルは.dsdtへ移動 */
+     /* 例: color: #555; */ /* このスタイルは.dsdtへ移動 */
+}
+
+/* dd - 定義リストの項目の内容 (変更なし) */
+dd {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* .dsdt - dtに割り振ったクラス【★スタイルを移動しました】 */
+.dsdt {
     font-weight: bold; /* 太字 */
     margin-top: 1.5em; /* 上余白（項目間の区切り） */
     margin-bottom: 0.5em; /* 下余白（定義との間） */
     color: #555; /* 少し控えめな色 */
+     /* デフォルトのdtスタイルを打ち消したい場合などはここに追加 */
 }
 
-/* dd - 定義リストの項目の内容 */
-dd {
-    margin-left: 1.5em; /* 左インデント */
-    margin-bottom: 1em; /* 下余白 */
-}
 
-/* .dsdt - dtに割り振ったクラス */
-/* 上記のdtセレクタで基本スタイルを定義したので、dsdtでは追加の調整のみ */
-/* 現状、dtセレクタのスタイルがそのまま適用されるため、dsdtに特別なスタイルは不要かもしれません */
-
-
-/* .price-note - 価格表示用のクラス */
+/* .price-note - 価格表示用のクラス (変更なし) */
 .price-note {
-    font-size: 1.5em; /* 価格を大きく表示 */
-    font-weight: bold; /* 太字 */
-    color: #d9534f; /* 目を引く色（例：赤系） */
-    text-align: center; /* 中央揃え */
-    margin: 30px auto; /* 上下の余白 */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d9534f;
+    text-align: center;
+    margin: 30px auto;
 }
 
-/* .cta-button - CTAボタンのリンク（aタグ） */
+/* .cta-button - CTAボタンのリンク（aタグ） (変更なし) */
 .cta-button {
-    display: block; /* ブロック要素化 */
-    width: 80%; /* 親要素に対する幅 */
-    max-width: 350px; /* 最大幅 */
-    margin: 40px auto; /* 上下の余白、中央配置 */
-    padding: 15px 25px; /* 内側の余白 */
-    text-align: center; /* テキスト中央揃え */
-    background-color: #ff7e00; /* ボタンの背景色（例：オレンジ系、目立つ色） */
-    color: white; /* テキスト色 */
-    font-size: 1.3em; /* 文字サイズ */
-    font-weight: bold; /* 太字 */
-    text-decoration: none; /* 下線をなくす */
-    border-radius: 30px; /* 角を丸く（ピル型） */
-    transition: background-color 0.3s ease; /* ホバー時のアニメーション */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* ボタンに影 */
+    display: block;
+    width: 80%;
+    max-width: 350px;
+    margin: 40px auto;
+    padding: 15px 25px;
+    text-align: center;
+    background-color: #ff7e00;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .cta-button:hover {
-    background-color: #ff9a3d; /* ホバー時の色 */
+    background-color: #ff9a3d;
 }
 
-/* .payment-icons - 決済方法アイコンのコンテナ */
+/* .payment-icons - 決済方法アイコンのコンテナ (変更なし) */
 .payment-icons {
-    text-align: center; /* 中央揃え */
-    margin-top: 20px; /* 上余白 */
-    margin-bottom: 20px; /* 下余白 */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-/* .payment-icons 内の画像 */
+/* .payment-icons 内の画像 (変更なし) */
 .payment-icons img {
-    height: 30px; /* アイコンの高さ */
-    margin: 0 8px; /* アイコン間の横余白 */
-    display: inline-block; /* インラインブロック要素化 */
-    width: auto; /* 幅は自動 */
-    vertical-align: middle; /* 中央揃え */
+    height: 30px;
+    margin: 0 8px;
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
 }
 
 
-/* スマートフォン表示の調整例（メディアクエリ） */
-/* 画面幅が小さい場合に適用されるスタイル */
+/* スマートフォン表示の調整例（メディアクエリ） (クラス指定箇所を修正) */
 @media (max-width: 600px) {
     main {
-        padding: 15px; /* スマホでは左右の余白を減らす */
-        margin: 10px; /* 上下の余白も少し減らす */
+        padding: 15px;
+        margin: 10px;
     }
 
-    .dh2 {
-        font-size: 1.5em; /* スマホでは文字サイズを少し小さく */
+    .dh2 { /* h2 はクラス指定があるのでそのまま */
+        font-size: 1.5em;
         margin-bottom: 20px;
     }
 
-    .dpics {
-        margin: 20px auto; /* スマホでも画像の余白を維持 */
+    .dpics { /* img はクラス指定があるのでそのまま */
+        margin: 20px auto;
     }
 
-    .dnp {
-        font-size: 0.95em; /* 本文も少し小さくしても良い */
+    .dnp { /* p はクラス指定があるのでそのまま */
+        font-size: 0.95em;
         margin-bottom: 0.8em;
     }
 
-    li {
+    /* li に直接スタイルを当てていないので、ここも.dsliへ変更 */
+    .dsli {
         margin-bottom: 0.6em; /* リスト間隔も少し詰める */
     }
 
-     .cta-button {
-        width: 90%; /* スマホでは幅を広げる */
-        font-size: 1.1em; /* スマホではボタンの文字サイズも少し小さく */
+     .cta-button { /* ボタンはクラス指定があるのでそのまま */
+        width: 90%;
+        font-size: 1.1em;
         padding: 12px 15px;
         margin: 30px auto;
     }
 
-     .payment-icons img {
-        height: 25px; /* スマホではアイコンも少し小さく */
+     .payment-icons img { /* 決済アイコン画像はクラス指定があるのでそのまま */
+        height: 25px;
         margin: 0 5px;
     }
+
+     /* dt に直接スタイルを当てていないので、ここも.dsdtへ変更 */
+     .dsdt {
+         margin-top: 1em; /* スマホでは間隔を詰める */
+     }
+
+      /* dd に直接スタイルは当てていないので修正なし */
 
 }
