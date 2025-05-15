@@ -1,4 +1,118 @@
- /* 例：最低限のスタイル */
+/*ヘッダー
+---------------------------------------------------------------------------*/
+/*h1テキスト。このテンプレートでは、画面最上部の帯の左側に小文字で入れているテキストです。*/
+header h1 {
+	font-weight: normal;
+	margin: 0;padding: 0;
+	font-size: 0.8rem;		/*文字サイズを80%*/
+	letter-spacing: 0.1em;	/*文字間隔を少しだけ広く*/
+}
+
+	/*画面幅700px以下の追加指定*/
+	@media screen and (max-width:700px) {
+
+	header h1 {
+		display: none;	/*表示しない*/
+	}
+
+	}/*追加指定ここまで*/
+
+
+/*ヘッダー内のheader-inner（ロゴ画像とメニューブロックを囲むボックス）
+---------------------------------------------------------------------------*/
+/*ボックスの設定*/
+.header-inner {
+	position: relative;
+	display: flex;			/*直接の子要素を横並びにする。この場合、ロゴとメニューブロックが対象。*/
+	align-items: center;	/*天地中央に配置*/
+	background: #fff;		/*背景色*/
+}
+
+/*トップページでのボックス*/
+.home .header-inner {
+	display: block;	/*flexを解除する*/
+}
+
+
+/*ヘッダー内のロゴ
+---------------------------------------------------------------------------*/
+/*ロゴ画像*/
+#logo img {display: block;}
+#logo {
+	margin: 0;padding: 0;
+	width: 80px;	/*ロゴ画像の幅*/
+}
+
+/*トップページのロゴ画像*/
+.home #logo {
+	width: 80px;	/*ロゴ画像の幅*/
+	position: absolute;z-index: 1;
+	left: 80%;
+	top: 0px;
+	transform: translateX(-50%);
+}
+
+	/*画面幅900px以下の追加指定*/
+	@media screen and (max-width:900px) {
+	
+	/*ロゴサイズの上書き*/
+	.home #logo {
+		min-width: 80px;	/*最小幅を設定しておきます。これ以上は小さくなりません。*/
+		width: 10vw;		/*幅。画面幅100%＝100vwです。*/
+	}
+	
+	}/*追加指定ここまで*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 例：最低限のスタイル */
         body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
         main { max-width: 800px; margin: 20px auto; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
         section { margin-bottom: 40px; padding: 20px; border-bottom: 1px solid #eee; }
