@@ -1708,4 +1708,5 @@ dd {
 
 .price-note {
   white-space: nowrap;
+　display: inline;
 }
