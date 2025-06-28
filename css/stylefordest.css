@@ -1704,3 +1704,8 @@ dd {
       /* dd に直接スタイルは当てていないので修正なし */
 
 }
+
+
+.price-note {
+  white-space: nowrap;
+}
