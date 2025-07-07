@@ -1738,3 +1738,66 @@ dd {
     margin-bottom: 1rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
+
+
+/* インパクトステートメント（実績部分） */
+.impact-statement {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffcc00; /* 目立つ色 */
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* タグライン */
+.tagline {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+    .main-catch-phrase {
+        font-size: 1.8rem;
+    }
+    .sub-catch-phrase {
+        font-size: 1.4rem;
+    }
+    .impact-statement {
+        font-size: 1.2rem;
+    }
+    .story-quote {
+        font-size: 1.3rem;
+    }
+    .story-quote::before, .story-quote::after {
+        font-size: 3rem;
+    }
+    .important-point, .program-title {
+        font-size: 1.5rem;
+    }
+    .cta-section .dh2 {
+        font-size: 1.8rem;
+    }
+    .cta-button {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+        min-width: unset;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-catch-phrase {
+        font-size: 1.5rem;
+    }
+    .sub-catch-phrase {
+        font-size: 1.2rem;
+    }
+    .impact-statement {
+        font-size: 1rem;
+    }
+    .tagline {
+        font-size: 1rem;
+    }
+}
+
