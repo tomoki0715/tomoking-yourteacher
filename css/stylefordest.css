@@ -587,16 +587,18 @@ ul {
   padding-left: 1.8em;
   position: relative;
   text-align: left; /* リストアイテムも左寄せを維持 */
+  line-height: 1.5; /* テキストの行の高さを調整 */
 }
 
 .dsli::before {
   content: '✅';
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%; /* 垂直方向の中央に配置 */
+  transform: translateY(-50%); /* 要素自身の高さの半分だけ上に移動して中央揃え */
   color: green;
   font-size: 1.1em;
-  line-height: 1;
+  line-height: 1; /* アイコン自体の行の高さを調整 */
 }
 
 /* dt - 定義リストの項目名 */
@@ -761,18 +763,6 @@ dd {
     }
     .impact-statement {
         font-size: 1.2rem;
-    }
-    .story-quote { /* HTMLに存在しないため削除 */
-        font-size: 1.3rem;
-    }
-    .story-quote::before, .story-quote::after { /* HTMLに存在しないため削除 */
-        font-size: 3rem;
-    }
-    .important-point, .program-title { /* HTMLに存在しないため削除 */
-        font-size: 1.5rem;
-    }
-    .cta-section .dh2 { /* HTMLに存在しないため削除 */
-        font-size: 1.8rem;
     }
     .cta-button {
         font-size: 1.4rem;
