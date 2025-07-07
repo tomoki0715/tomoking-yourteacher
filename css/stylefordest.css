@@ -1710,3 +1710,13 @@ dd {
   white-space: nowrap;
 　display: inline;
 }
+
+
+/* メインビジュアルセクション */
+.main-visual-section {
+    text-align: center;
+    padding: 5vw var(--global-space);
+    background: linear-gradient(180deg, rgba(var(--primary-color-rgb), 0.8) 0%, rgba(var(--primary-color-rgb), 0.6) 100%); /* 背景グラデーション */
+    color: var(--primary-inverse-color);
+    margin-bottom: 8vw; /* 次のセクションとの余白 */
+}
