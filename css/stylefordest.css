@@ -785,3 +785,11 @@ dd {
         font-size: 1rem;
     }
 }
+
+.dsdt, dd {
+  display: inline;    /* インライン化 */
+}
+
+dd {
+  margin-left: 0.5em; /* 少しスペースを開ける */
+}
