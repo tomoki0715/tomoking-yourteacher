@@ -124,7 +124,7 @@ a:hover {
 /*container*/
 #container {
 	overflow-x: hidden;
-    text-align: center; /* コンテンツ全体を中央寄せ */
+    text-align: center; /* コンテンツ全体を中央寄せ */
 }
 
 
@@ -435,7 +435,7 @@ main h3 {
 #footer-contents {
 	background: rgba(var(--primary-color-rgb), 0.8) url('../images/bg_footer.png') no-repeat left bottom / auto 100%;	/*背景色はcss冒頭のvar(primary-color-rgb)を読み込み、0.8で透明度も指定。残りは背景画像の読み込み、リピートせず、左下に配置。高さ100%。*/
 	color: var(--primary-inverse-color);	/*文字色*/
-    text-align: center; /* フッターコンテンツも中央寄せ */
+    text-align: center; /* フッターコンテンツも中央寄せ */
 }
 #footer-contents a {
 	color: inherit;
@@ -480,7 +480,7 @@ ul.icons {
 	display: flex;
 	align-self: center;
 	gap: 1rem;	/*アイコン同士のマージン的な要素。１文字分。*/
-    justify-content: center; /* アイコンを中央寄せ */
+    justify-content: center; /* アイコンを中央寄せ */
 }
 .icons i {
 	font-size: 40px;	/*アイコンサイズ*/
@@ -535,261 +535,285 @@ ul.icons {
 
 
 section {
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
 }
 
 section:last-of-type {
-    border-bottom: none;
-    margin-bottom: 20px;
-    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 20px;
+    padding-bottom: 0;
 }
 
 /* h2 - 各セクションのメインタイトル */
 .dh2 {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #0056b3;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    line-height: 1.4;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #0056b3;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    line-height: 1.4;
 }
 
 /* img - 各セクションの画像 */
 .dpics {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 25px auto;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 /* p - 各セクションの本文段落 */
 .dnp {
-    font-size: 1em;
-    margin-bottom: 1em;
-    text-align: left; /* 段落は左寄せを維持 */
+    font-size: 1em;
+    margin-bottom: 1em;
+    text-align: left; /* 段落は左寄せを維持 */
 }
 
 /* ul - リストコンテナ */
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
 }
 
 /* .dsli - リストアイテム */
 .dsli {
-  margin-bottom: 0.8em;
-  padding-left: 1.8em;
-  position: relative;
-  text-align: left; /* リストアイテムも左寄せを維持 */
-  line-height: 1.5; /* テキストの行の高さを調整 */
+  margin-bottom: 0.8em;
+  padding-left: 1.8em;
+  position: relative;
+  text-align: left; /* リストアイテムも左寄せを維持 */
+  line-height: 1.5; /* テキストの行の高さを調整 */
 }
 
 .dsli::before {
-  content: '✅';
-  position: absolute;
-  left: 0;
-  top: 50%; /* 垂直方向の中央に配置 */
-  transform: translateY(-50%); /* 要素自身の高さの半分だけ上に移動して中央揃え */
-  color: green;
-  font-size: 1.1em;
-  line-height: 1; /* アイコン自体の行の高さを調整 */
+  content: '✅';
+  position: absolute;
+  left: 0;
+  top: 50%; /* 垂直方向の中央に配置 */
+  transform: translateY(-50%); /* 要素自身の高さの半分だけ上に移動して中央揃え */
+  color: green;
+  font-size: 1.1em;
+  line-height: 1; /* アイコン自体の行の高さを調整 */
 }
 
 /* dt - 定義リストの項目名 */
 .dsdt {
-    font-weight: bold;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    color: #555;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: #555;
 }
 
 /* dd - 定義リストの項目の内容 */
 dd {
-    margin-left: 1.5em;
-    margin-bottom: 1em;
-    text-align: left; /* 定義内容も左寄せを維持 */
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+    text-align: left; /* 定義内容も左寄せを維持 */
 }
 
 /* .price-note - 価格表示用のクラス */
 .price-note {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #d9534f;
-    text-align: center;
-    margin: 30px auto;
-    white-space: nowrap; /* 改行を禁止 */
-    display: inline-block; /* インラインブロック要素として扱う */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d9534f;
+    text-align: center;
+    margin: 30px auto;
+    white-space: nowrap; /* 改行を禁止 */
+    display: inline-block; /* インラインブロック要素として扱う */
 }
 
 /* .cta-button - CTAボタンのリンク（aタグ） */
 .cta-button {
-    display: block;
-    width: 80%;
-    max-width: 350px;
-    margin: 40px auto;
-    padding: 15px 25px;
-    text-align: center;
-    background-color: #ff7e00;
-    color: white;
-    font-size: 1.3em;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: block;
+    width: 80%;
+    max-width: 350px;
+    margin: 40px auto;
+    padding: 15px 25px;
+    text-align: center;
+    background-color: #ff7e00;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .cta-button:hover {
-    background-color: #ff9a3d;
+    background-color: #ff9a3d;
 }
 
 /* .payment-icons - 決済方法アイコンのコンテナ */
 .payment-icons {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* .payment-icons 内の画像 */
 .payment-icons img {
-    height: 30px;
-    margin: 0 8px;
-    display: inline-block;
-    width: auto;
-    vertical-align: middle;
+    height: 30px;
+    margin: 0 8px;
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
 }
 
 
 /* スマートフォン表示の調整例（メディアクエリ） */
 @media (max-width: 600px) {
-    main {
-        padding: 15px;
-        margin: 10px;
-    }
+    main {
+        padding: 15px;
+        margin: 10px;
+    }
 
-    .dh2 {
-        font-size: 1.5em;
-        margin-bottom: 20px;
-    }
+    .dh2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
 
-    .dpics {
-        margin: 20px auto;
-    }
+    .dpics {
+        margin: 20px auto;
+    }
 
-    .dnp {
-        font-size: 0.95em;
-        margin-bottom: 0.8em;
-    }
+    .dnp {
+        font-size: 0.95em;
+        margin-bottom: 0.8em;
+    }
 
-    .dsli {
-        margin-bottom: 0.6em;
-    }
+    .dsli {
+        margin-bottom: 0.6em;
+    }
 
-     .cta-button {
-        width: 90%;
-        font-size: 1.1em;
-        padding: 12px 15px;
-        margin: 30px auto;
-    }
+     .cta-button {
+        width: 90%;
+        font-size: 1.1em;
+        padding: 12px 15px;
+        margin: 30px auto;
+    }
 
-     .payment-icons img {
-        height: 25px;
-        margin: 0 5px;
-    }
+     .payment-icons img {
+        height: 25px;
+        margin: 0 5px;
+    }
 
-     .dsdt {
-         margin-top: 1em;
-     }
+     .dsdt {
+         margin-top: 1em;
+     }
 }
 
 
 /* メインビジュアルセクション */
 .main-visual-section {
-    text-align: center;
-    padding: 5vw var(--global-space);
-    background: linear-gradient(180deg, rgba(var(--primary-color-rgb), 0.8) 0%, rgba(var(--primary-color-rgb), 0.6) 100%);
-    color: var(--primary-inverse-color);
-    margin-bottom: 8vw;
+    text-align: center;
+    padding: 5vw var(--global-space);
+    background: linear-gradient(180deg, rgba(var(--primary-color-rgb), 0.8) 0%, rgba(var(--primary-color-rgb), 0.6) 100%);
+    color: var(--primary-inverse-color);
+    margin-bottom: 8vw;
 }
 
 /* メインキャッチフレーズ */
 .main-catch-phrase {
-    font-size: 2.5rem;
-    font-weight: 900;
-    line-height: 1.3;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    /* 既存のスタイル */
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    /* 新しい装飾 */
+    color: #ffcc00; /* 金色 */
+    text-shadow: 
+        -1px -1px 0 var(--primary-color),  /* 上左の青い影 */
+        1px -1px 0 var(--primary-color),   /* 上右の青い影 */
+        -1px 1px 0 var(--primary-color),   /* 下左の青い影 */
+        1px 1px 0 var(--primary-color),    /* 下右の青い影 */
+        3px 3px 6px rgba(0, 0, 0, 0.6);     /* 深い影 */
 }
 
 /* サブキャッチフレーズ */
 .sub-catch-phrase {
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 1.4;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    /* 既存のスタイル */
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    /* 新しい装飾 */
+    color: var(--primary-color); /* 青色 */
+    text-shadow: 
+        1px 1px 2px #ffcc00, /* 金色の影 */
+        2px 2px 4px rgba(0, 0, 0, 0.3); /* 深い影 */
 }
 
 
 /* インパクトステートメント（実績部分） */
 .impact-statement {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #ffcc00;
-    margin-bottom: 0.5rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffcc00;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* タグライン */
 .tagline {
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
-    opacity: 0.9;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    opacity: 0.9;
 }
 
 @media screen and (max-width: 768px) {
-    .main-catch-phrase {
-        font-size: 1.8rem;
-    }
-    .sub-catch-phrase {
-        font-size: 1.4rem;
-    }
-    .impact-statement {
-        font-size: 1.2rem;
-    }
-    .cta-button {
-        font-size: 1.4rem;
-        padding: 1rem 2rem;
-        min-width: unset;
-    }
+    .main-catch-phrase {
+        font-size: 1.8rem;
+        /* モバイルでの影の調整 */
+        text-shadow: 
+            -0.5px -0.5px 0 var(--primary-color),
+            0.5px -0.5px 0 var(--primary-color),
+            -0.5px 0.5px 0 var(--primary-color),
+            0.5px 0.5px 0 var(--primary-color),
+            2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    .sub-catch-phrase {
+        font-size: 1.4rem;
+        /* モバイルでの影の調整 */
+        text-shadow: 
+            0.5px 0.5px 1px #ffcc00,
+            1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    .impact-statement {
+        font-size: 1.2rem;
+    }
+    .cta-button {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+        min-width: unset;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    .main-catch-phrase {
-        font-size: 1.5rem;
-    }
-    .sub-catch-phrase {
-        font-size: 1.2rem;
-    }
-    .impact-statement {
-        font-size: 1rem;
-    }
-    .tagline {
-        font-size: 1rem;
-    }
+    .main-catch-phrase {
+        font-size: 1.5rem;
+    }
+    .sub-catch-phrase {
+        font-size: 1.2rem;
+    }
+    .impact-statement {
+        font-size: 1rem;
+    }
+    .tagline {
+        font-size: 1rem;
+    }
 }
 
 .dsdt, dd {
-  display: inline;    /* インライン化 */
+  display: inline;    /* インライン化 */
 }
 
 dd {
-  margin-left: 0.5em; /* 少しスペースを開ける */
+  margin-left: 0.5em; /* 少しスペースを開ける */
 }
